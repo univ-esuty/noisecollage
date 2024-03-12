@@ -13,6 +13,13 @@ It is a training-free method and can be applied to text-to-image diffusion model
 This repository contains codes for implementation of NoiseCollage based on [diffusers](https://github.com/huggingface/diffusers). 
 The codes heavily depend on `diffusers` and we would like to thank all those involved. 
 
+#### Generated Results
+1. An example of layout/caption conditions and corresponding generated images by NoiseCollage. 
+![img](example/nc.png)  
+
+2. An example of NoiseCollage and ControlNet integration.
+![img](example/nc-controlnet.png)
+
 
 ## Environment setup
 1. We tested all codes in `Python: 3.8.10`. Make a virtual environment.
