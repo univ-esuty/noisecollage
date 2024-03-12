@@ -8,9 +8,9 @@ ArXiv -> https://arxiv.org/abs/2403.03485
 NoiseCollage is a novel layout-aware text-to-image diffusion model to tackle several issues, including mismatches between the text and layout conditions and quality degradation of generated images in SoTA models.
 During the denoising process, NoiseCollage independently estimates noises for individual objects and then crops and merges them into a single noise. 
 This operation helps avoid condition mismatches; in other words, it can put the right objects in the right places. 
-It is a training-free method and can be applied to text-to-image diffusion models such as StableDiffusion(SD1.5/2.1) and supports integration with (ControlNet)[https://github.com/lllyasviel/ControlNet].
+It is a training-free method and can be applied to text-to-image diffusion models such as StableDiffusion(SD1.5/2.1) and supports integration with [ControlNet](https://github.com/lllyasviel/ControlNet).
 
-This repository contains codes for implementation of NoiseCollage based on (diffusers)[https://github.com/huggingface/diffusers]. 
+This repository contains codes for implementation of NoiseCollage based on [diffusers](https://github.com/huggingface/diffusers). 
 The codes heavily depend on `diffusers` and we would like to thank all those involved. 
 
 
