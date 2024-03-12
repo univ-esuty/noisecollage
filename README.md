@@ -16,17 +16,14 @@ The codes heavily depend on `diffusers` and we would like to thank all those inv
 
 ## Input Conditions and Generated Results
 1. An example of layout/caption conditions and corresponding generated images by NoiseCollage. 
-![img](sample_inputs/normal/testcase_two-buses/annotation_view__bbox.png)
-![img](sample_outputs/nc/testcase_two-buses/result_002.png)
+...
 
 2. An example of NoiseCollage and ControlNet integration
 (a) with Sketch condition.
-![img](sample_inputs/controlnet-sketch/testcase_colorful-donuts/annotation_view__bbox&sketch.png)
-![img](sample_outputs/nc-controlnet/testcase_colorful-donuts/result_003.png)
+...
 
 (b) with Pose condition.
-![img](sample_inputs/controlnet-pose/testcase_wedding/annotation_view__bbox&pose.png)
-![img](sample_outputs/nc-controlnet/testcase_wedding/result_001.png)
+...
 
 You can check other version of generated images and cropped images in `sample_outputs/*`.
 
@@ -56,20 +53,20 @@ Optionally, make controlnet condition images.
 Please refere the folder `sample_inputs/*` for details.
 
 2. Image generation
-Edit the configration `ExpConfigs` in `gen_img_by_noisecollage.py` and run the code as follows. We recommend to set `batch_size≧4` to get the best quality image.  
+Edit the configuration `ExpConfigs` in `gen_img_by_noisecollage.py` and run the code as follows. We recommend to set `batch_size≧4` to get the best quality image.  
 ```
 python gen_img_by_noisecollage.py
 ```
 
 3. Image Generation with ControlNet
-Edit the configration `ExpConfigs` in `gen_img_by_noisecollage-with-controlnet.py` and run the code as follows.
+Edit the configuration `ExpConfigs` in `gen_img_by_noisecollage-with-controlnet.py` and run the code as follows.
 ```
 python gen_img_by_noisecollage-with-controlnet.py
 ```
 Note: Masked Cross-Attention (mentioned at 3.3 in the paper) is not necessary when integrating NoiseCollage with ControlNet(sketch, pose, canny, ...).
 
 4. Image generation with LoRA models.
-Edit the configration `ExpConfigs` in the code to set your LoRA model path and run the code following step 2 and 3.
+Edit the configuration `ExpConfigs` in the code to set your LoRA model path and run the code following step 2 and 3.
 Applying multiple LoRA models is not currently supported but can be done with a minor code modification. 
 It is also possible to apply a LoRA model to the region A and the other LoRA model to region B. 
 This will allow for more flexible image generation.
@@ -82,8 +79,8 @@ Important!: Please handle generated images with caution because `safety_checker(
 * NoiseCollage cannot be applied directory to `SDXL` due to some changes in text-embedding mechanism.
 
 2. Future works
-* Imporove Masked Cross-Attention or replace it to another mechanism.
-* Apply NoiseCollage to SD3 which is a transformer based architecture text-to-image diffusion models.
+* Improve Masked Cross-Attention or replace it to another mechanism.
+* Apply NoiseCollage to SD3 which is a transformer based architecture text-to-image diffusion model.
 * Apply NoiseCollage to the other diffusion models such as video, 3D model, and categorical data generation?
 
 
