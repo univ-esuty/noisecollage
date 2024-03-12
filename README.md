@@ -10,6 +10,9 @@ During the denoising process, NoiseCollage independently estimates noises for in
 This operation helps avoid condition mismatches; in other words, it can put the right objects in the right places. 
 It is a training-free method and can be applied to text-to-image diffusion models such as StableDiffusion(SD1.5/2.1) and supports integration with [ControlNet](https://github.com/lllyasviel/ControlNet).
 
+#### Crop & Merge Operation of estimated noise
+![img](example/abs.png)
+
 This repository contains codes for implementation of NoiseCollage based on [diffusers](https://github.com/huggingface/diffusers). 
 The codes heavily depend on `diffusers` and we would like to thank all those involved. 
 
