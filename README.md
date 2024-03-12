@@ -14,19 +14,6 @@ This repository contains codes for implementation of NoiseCollage based on [diff
 The codes heavily depend on `diffusers` and we would like to thank all those involved. 
 
 
-## Input Conditions and Generated Results
-1. An example of layout/caption conditions and corresponding generated images by NoiseCollage. 
-...
-
-2. An example of NoiseCollage and ControlNet integration
-(a) with Sketch condition.
-...
-
-(b) with Pose condition.
-...
-
-You can check other version of generated images and cropped images in `sample_outputs/*`.
-
 ## Environment setup
 1. We tested all codes in `Python: 3.8.10`. Make a virtual environment.
 ```
