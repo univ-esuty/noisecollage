@@ -74,7 +74,7 @@ Important!: Please handle generated images with caution because `safety_checker(
 
 2. Future works
 * Improve Masked Cross-Attention or replace it to another mechanism.
-* Apply NoiseCollage to [SD3](https://stability.ai/news/stable-diffusion-3) which is a transformer based architecture text-to-image diffusion model. (It might not become  open source😭)
+* Apply NoiseCollage to [SD3](https://stability.ai/news/stable-diffusion-3) which is a transformer based architecture text-to-image diffusion model. (SD3 might not become  open source😭)
 * Apply NoiseCollage to the other diffusion models such as video, 3D model, and categorical data generation?
 
 
