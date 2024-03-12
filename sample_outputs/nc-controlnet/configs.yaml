@@ -1,0 +1,19 @@
+model_version: sd15
+model_base: epicphotogasm_safetensors
+model_controlnet: sketch
+use_lora: false
+lora_path: ''
+lora_alpha: null
+ms_coco_path: ./sample_inputs/controlnet-sketch
+prompt_type: self_caption
+collage_mode: fixed
+batch_size: 4
+resolution: 512
+guidance_scale: 7.5
+num_inference_steps: 50
+prompt: ''
+n_prompt: ', low quality, noisy, artifact, blurry, watermark'
+bg_blending_weight: 0.1
+GPU_IDX: 0
+result_dir: ./sample_outputs
+exp_name: nc-controlnet
